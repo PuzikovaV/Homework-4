@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Check
 {
-    static class FirstHomework
+    internal class Class1
     {
-        public static 
     }
 }
