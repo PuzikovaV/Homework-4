@@ -15,3 +15,26 @@ Console.WriteLine($"Сумма элементов с нечетными инде
 
 int bCountOddElements = HomeworkArray.CountOddElements(b);
 Console.WriteLine($"Количество нечетных элементов в массиве - {bCountOddElements}");
+
+int[] aBubbleSortMax=HomeworkArray.MakeBubbleSortMax(a);
+for (int i=0; i<aBubbleSortMax.Length; i++)
+{
+    Console.Write($"{aBubbleSortMax[i]} ");
+}
+
+Console.WriteLine();
+
+int[] aSelectorSortMin = HomeworkArray.MakeSelectorSorttMin(a);
+for (int i = 0; i < aSelectorSortMin.Length; i++)
+{
+    Console.Write($"{aSelectorSortMin[i]} ");
+}
+
+Console.WriteLine();
+
+int[] bReversOfArray = HomeworkArray.MakeReversOfArray(b);
+for (int i=0; i<bReversOfArray.Length; i++)
+{
+    Console.Write($"{bReversOfArray[i]} ");
+}
+

@@ -65,12 +65,11 @@ namespace Check
         public static int CountElementsWithOddIndex (int[] a)
         {
             int sumOfElements = 0;
-            for (int i=0; i<a.Length; i++)
+            for (int i=1; i<a.Length; i+=2)
             {
-                if (i % 2 != 0)
-                {
-                    sumOfElements+=a[i];
-                }
+            
+                sumOfElements+=a[i];
+            
             }
             return sumOfElements;
         }
@@ -78,7 +77,7 @@ namespace Check
         public static int CountOddElements(int[] a)
         {
             int counter = 0;
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 1; i < a.Length; i++)
             {
                 if (a[i] % 2 != 0)
                 {
@@ -87,6 +86,61 @@ namespace Check
             }
             return counter;
         }
+
+        public static int[] MakeBubbleSortMax (int[] a)
+        {
+            int tmp;
+            for (int i=0; i<a.Length-1; i++)
+            {
+                for (int j=i+1; j<a.Length; j++)
+                {
+                    if (a[i] > a[j])
+                    {
+                        tmp=a[i];
+                        a[i]=a[j];
+                        a[j]=tmp;
+                    }
+                }
+            }
+            return a;
+        }
+        public static int[] MakeSelectorSorttMin (int[] a)
+        {
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                int min=i;
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[j] > a[min])
+                    {
+                        min = j;
+                    }
+                }
+                int tmp;
+                tmp=a[min];
+                a[min] = a[i];
+                a[i] = tmp;
+
+            }
+            return a;
+        }
+
+        public static int[] MakeReversOfArray(int[] a)
+        {
+            for (int i=a.Length-1; i>=0; i--)
+            {
+                int tmp;
+                for (int j = 0; j > i; j++)
+                {
+                    tmp=a[j];
+                    a[j]= a[i];
+                    a[i] = tmp;
+                }
+            }
+            return a;
+        }
+
+
 
     }
 }
