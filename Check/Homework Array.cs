@@ -125,12 +125,12 @@ namespace Check
             return a;
         }
 
-        public static int[] MakeReversOfArray(int[] a)
+        /*public static int[] MakeReversOfArray(int[] a)
         {
             for (int i=a.Length-1; i>=0; i--)
             {
                 int tmp;
-                for (int j = 0; j > i; j++)
+                for (int j = 0; ; j++)
                 {
                     tmp=a[j];
                     a[j]= a[i];
@@ -138,7 +138,7 @@ namespace Check
                 }
             }
             return a;
-        }
+        }*/
 
 
 

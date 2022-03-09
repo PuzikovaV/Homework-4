@@ -32,9 +32,20 @@ for (int i = 0; i < aSelectorSortMin.Length; i++)
 
 Console.WriteLine();
 
-int[] bReversOfArray = HomeworkArray.MakeReversOfArray(b);
+/*int[] bReversOfArray = HomeworkArray.MakeReversOfArray(b);
 for (int i=0; i<bReversOfArray.Length; i++)
 {
     Console.Write($"{bReversOfArray[i]} ");
-}
+}*/
+
+int[,] c = {{ 1, 15, -100 }, {99, 32, -14}};
+int cFindMin2DArray = TwoDimesionalArray.FindMin(c);
+Console.Write($"Минимальный элемент массива = {cFindMin2DArray}");
+
+Console.WriteLine();
+
+int cFindMax2DArray=TwoDimesionalArray.FindMax(c);
+Console.Write($"Максимальный элемент массива = {cFindMax2DArray}");
+
+Console.WriteLine();
 
