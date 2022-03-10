@@ -49,3 +49,15 @@ Console.Write($"Максимальный элемент массива = {cFindM
 
 Console.WriteLine();
 
+int cIndexR = 0;
+int cIndexC = 0;
+TwoDimesionalArray.FindIndexOfMaxElement(c, out cIndexR, out cIndexC);
+int cIndexR2 = 0;
+int cIndexC2 = 0;
+TwoDimesionalArray.FindIndexOfMinElement(c, out cIndexR2, out cIndexC2);
+
+Console.Write($"Индекс максимального массива {cIndexR}, {cIndexC}");
+
+Console.WriteLine();
+
+Console.Write($"Индекс минимального массива {cIndexR2}, {cIndexC2}");

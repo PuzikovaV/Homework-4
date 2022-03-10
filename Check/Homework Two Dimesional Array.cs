@@ -39,5 +39,47 @@ namespace Check
             }
             return max;
         }
+
+        public static void FindIndexOfMaxElement(int[,] a, out int rowIndex, out int columnIndex)
+        {
+            int indexR=0;
+            int indexC=0;
+            int max = a[0, 0];
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    if (a[i, j] > max)
+                    {
+                        max = a[i, j];
+                        indexR = i;
+                        indexC = j;
+                    }
+                }
+            }
+            rowIndex= indexR;
+            columnIndex= indexC;
+        }
+
+        public static void FindIndexOfMinElement(int[,] a, out int rowIndex, out int columnIndex)
+        {
+            int indexR = 0;
+            int indexC = 0;
+            int min = a[0, 0];
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    if (a[i, j] < min)
+                    {
+                        min = a[i, j];
+                        indexR = i;
+                        indexC = j;
+                    }
+                }
+            }
+            rowIndex = indexR;
+            columnIndex = indexC;
+        }
     }
 }
