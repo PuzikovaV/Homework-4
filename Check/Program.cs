@@ -1,6 +1,6 @@
 ﻿using Check;
 
-int[] a = {15, 99, -205, 63, 0, -503};
+/*int[] a = {15, 99, -205, 63, 0, -503};
 int aMin = HomeworkArray.FindMinOfArray(a);
 int aMax = HomeworkArray.FindMaxOfArray(a);
 Console.WriteLine($"Минимальный элемент массива - {aMin}, максимальный элемент массива - {aMax}");
@@ -30,7 +30,7 @@ for (int i = 0; i < aSelectorSortMin.Length; i++)
     Console.Write($"{aSelectorSortMin[i]} ");
 }
 
-Console.WriteLine();
+Console.WriteLine();*/
 
 /*int[] bReversOfArray = HomeworkArray.MakeReversOfArray(b);
 for (int i=0; i<bReversOfArray.Length; i++)
@@ -38,7 +38,7 @@ for (int i=0; i<bReversOfArray.Length; i++)
     Console.Write($"{bReversOfArray[i]} ");
 }*/
 
-int[,] c = {{ 1, 15, -100 }, {99, 32, -14}};
+/*int[,] c = {{ 1, 15, -100 }, {99, 32, -14}};
 int cFindMin2DArray = TwoDimesionalArray.FindMin(c);
 Console.Write($"Минимальный элемент массива = {cFindMin2DArray}");
 
@@ -60,4 +60,11 @@ Console.Write($"Индекс максимального массива {cIndexR}
 
 Console.WriteLine();
 
-Console.Write($"Индекс минимального массива {cIndexR2}, {cIndexC2}");
+Console.Write($"Индекс минимального массива {cIndexR2}, {cIndexC2}");*/
+
+string f = "ght";
+string h = "lkko";
+Variables.SwapTwoValues(ref f, ref h);
+
+Console.WriteLine(f);
+Console.WriteLine(h);

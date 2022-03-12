@@ -24,5 +24,23 @@ namespace Check
 
             Console.WriteLine($"y={A}x+{B}");
         }
+
+        public static int DecideSimpleProblem (int a, int b)
+        {
+            return (5 * a + b * b) / (b - a);
+        }
+
+        public static void MakeDivided (int a, ref int b, out int rez1, out int rez2)
+        {
+            rez1 = a / b;
+            rez2 = a % b;
+        }
+
+        public static void SwapTwoValues (ref string a, ref string b)
+        {
+            string tmp = a;
+            a = b;
+            b = tmp;
+        }
     }
 }
