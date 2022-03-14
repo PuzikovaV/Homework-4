@@ -68,3 +68,12 @@ Variables.SwapTwoValues(ref f, ref h);
 
 Console.WriteLine(f);
 Console.WriteLine(h);
+
+int a = 135;
+int b = 10;
+int aa;
+int bb;
+
+Variables.MakeDivide(a, b, out aa, out bb);
+Console.WriteLine(aa);
+Console.WriteLine(bb);

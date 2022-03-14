@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace Check
 {
-    internal class Variables
+    public class Variables
     {
         public static int DecideLinearEquation (int a, int b, int c)
         {
+            if (a==0)
+            {
+                throw new Exception("Wrong value for a");
+            }
+
+            else if (b == 0)
+            {
+                throw new Exception("Wrong value for b");
+            }
+            else if  (c == 0)
+            {
+                throw new Exception("Wrong value for a");
+            }
+
             int x;
             x=(c-b)/a;
             return x;
@@ -30,8 +44,12 @@ namespace Check
             return (5 * a + b * b) / (b - a);
         }
 
-        public static void MakeDivided (int a, ref int b, out int rez1, out int rez2)
+        public static void MakeDivide (int a, int b, out int rez1, out int rez2)
         {
+            if (b == 0)
+            {
+                throw new Exception("Wrong value for b");
+            }
             rez1 = a / b;
             rez2 = a % b;
         }
